@@ -72,17 +72,12 @@
             ctx.fillStyle = player1.c;
             ctx.fillRect(player1.x,  player1.y, 40,40);
 
-          ctx.fillStyle = player2.c;
+            ctx.fillStyle = player2.c;
             ctx.fillRect(player2.x,  player2.y, 40,40);
 
 
 
             pared.pintar(ctx);
-
-
-
-
-
 
         if(pause){
         
@@ -162,20 +157,20 @@
             }
 
             if(player1.se_tocan(pared)){
-                 if(direccion = 'up'){
+                 if(direccion == 'up'){
                     player1.y +=speed;
                 }
 
-                 if(direccion = 'down'){
+                 if(direccion == 'down'){
                     player1.y -=speed;
                 } 
 
 
-                 if(direccion = 'rigth'){
+                 if(direccion == 'rigth'){
                     player1.x -=speed;
                 }
 
-                if(direccion = 'left'){
+                if(direccion == 'left'){
                     player1.x +=speed;
                 }  
             }
